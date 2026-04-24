@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_loan_processor_db
+    username: bank_loan_processor_db
+    password: bank_loan_processor_db
+    driver-class-name: org.postgresql.Driver

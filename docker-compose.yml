@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: bank-loan-processor-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: bank_loan_processor_db
+      POSTGRES_USER: bank_loan_processor_db
+      POSTGRES_PASSWORD: bank_loan_processor_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

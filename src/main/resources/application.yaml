@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: bank-loan-processor
+  profiles:
+    default: local
+  datasource:
+    hikari:
+      connection-timeout: 10000
+      maximum-pool-size: 5
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
